@@ -1,12 +1,13 @@
 name: Verify
-on:
-  pull_request:
-    branches:
-      - '**'
-  push:
-    branches:
-      - master
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - '**'
+#   push:
+#     branches:
+#       - master
+# 
 jobs:
   branches:
     runs-on: ubuntu-latest

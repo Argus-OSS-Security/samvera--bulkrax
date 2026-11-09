@@ -1,15 +1,16 @@
 name: Verify
-on:
-  pull_request:
-    branches:
-      - '**'
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - labeled
-      - unlabeled
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - '**'
+#     types:
+#       - opened
+#       - synchronize
+#       - reopened
+#       - labeled
+#       - unlabeled
+# 
 jobs:
   check_pr_labels:
     runs-on: ubuntu-latest
